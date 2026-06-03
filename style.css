@@ -84,3 +84,89 @@
   width: 36px !important;
   height: 36px !important;
 }
+
+/* FIX - DJI Mavic 3 Multispectral kártyák */
+.multispectral-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+  margin-top: 50px !important;
+}
+
+.multi-card {
+  background: #ffffff !important;
+  padding: 34px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  min-height: 220px !important;
+}
+
+.multi-card svg,
+.multi-card i,
+.multi-card .icon {
+  width: 34px !important;
+  height: 34px !important;
+  color: #176332 !important;
+  margin-bottom: 22px !important;
+  position: static !important;
+  display: block !important;
+}
+
+.multi-card h3 {
+  color: #176332 !important;
+  font-size: 24px !important;
+  margin-bottom: 12px !important;
+}
+
+.multi-card p {
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+/* FIX - Komplett precíziós rendszer blokk */
+.workflow {
+  margin-top: 70px !important;
+  text-align: center !important;
+  padding: 50px !important;
+  background: #ffffff !important;
+  border-radius: 28px !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08) !important;
+}
+
+.workflow-steps {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 25px !important;
+  flex-wrap: wrap !important;
+}
+
+.step {
+  padding: 25px !important;
+  border-radius: 20px !important;
+  background: #f0f6f1 !important;
+  min-width: 220px !important;
+}
+
+.arrow {
+  font-size: 38px !important;
+  color: #176332 !important;
+}
+
+@media (max-width: 900px) {
+  .multispectral-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .workflow-steps {
+    flex-direction: column !important;
+  }
+
+  .arrow {
+    transform: rotate(90deg) !important;
+  }
+}
