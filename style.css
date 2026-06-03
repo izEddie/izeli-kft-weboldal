@@ -55,3 +55,32 @@
 
 
 
+/* FIX - Környezetvédelem kártyák szövegtörés */
+.eco-points div {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 18px !important;
+}
+
+.eco-points div > div {
+  flex: 1 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.eco-points p,
+.eco-points strong {
+  width: 100% !important;
+  max-width: none !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+.eco-points span,
+.eco-points i,
+.eco-points svg {
+  flex: 0 0 36px !important;
+  width: 36px !important;
+  height: 36px !important;
+}
